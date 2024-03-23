@@ -1,0 +1,70 @@
+@charset "utf-8";
+/* CSS Document */
+.headline{
+	height:80px;
+	background-color: #666699;
+}
+.name{
+	display: inline-block;
+}
+.card{
+	margin: 10px;
+	display: inline-block;
+	width: 40px;
+	height: 300px;
+	background-color: antiquewhite;
+	vertical-align: middle;
+}
+button{
+	height: 100px;
+}
+.content{
+	margin: 10px 0;
+	display: inline-block;
+	width: 1100px;
+	height: 400px;
+	background-color: antiquewhite;
+	vertical-align: middle;
+	overflow: hidden;
+}
+#tab2,#tab3{
+	display: none;
+}
+.active{
+	background-color: aqua;
+}
+.pic{
+	border: 2px solid black;
+	margin: 50px 50px 0 50px;
+	display: inline-block;
+	vertical-align: middle;
+	width: 300px;
+	overflow: hidden;
+	transition:0.5s;
+}
+.pic:hover{
+	transform: scale(1.1);
+}
+i{
+	font-size: 40px;
+    margin:-50px 0 0 150px;
+}
+.text{
+	margin-left: 80px;
+	margin-top: -300px;
+	line-height: 40px;
+    display: inline-block;
+	width: 600px;
+	vertical-align: middle;
+}
+.bottom{
+	height: 80px;
+	background-color: #666699;
+}
+.huidaodingbu{
+	display: block;
+	float: left;
+	margin: 10px 0 10px 100px;
+	text-decoration: none;
+	color: black;
+}

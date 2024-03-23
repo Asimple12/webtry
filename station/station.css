@@ -1,0 +1,76 @@
+@charset "utf-8";
+/* CSS Document */
+.headline{
+	height:80px;
+	background-color: #666699;
+}
+.name{
+	display: inline-block;
+}
+i{
+	margin: 0 450px;
+	font-size: 25px;
+	color: #666699;
+}
+.index{
+	overflow: hidden;
+	display: inline-block;
+	margin: 40px 40px 0 80px;
+	float: left;
+	width: 200px;
+	height: 300px;
+	background-color:black;
+	border-radius: 100px;
+	opacity: 0.9;
+}
+.index img,.food img,.school img,.hometown img{
+	display:block;
+	opacity: 0.1;
+}
+.index:hover img,.school:hover img,.food:hover img,.hometown:hover img{
+	animation: show 2s forwards;
+}
+@keyframes show{
+	from{opacity: 0.1;}
+	to{opacity: 1;}
+}
+.school{
+	overflow: hidden;
+	top: 120px;
+	margin:40px 40px 0 ;
+	float: left;
+	width: 200px;
+	height: 300px;
+	background-color:black;
+	border-radius: 100px;
+	opacity: 0.8;
+}
+.food{
+	overflow: hidden;
+	top: 120px;
+	margin:40px 40px 0;
+	float: left;
+	width: 200px;
+	height: 300px;
+	background-color:black;
+	border-radius: 100px;
+	opacity: 0.8;
+}
+.hometown{
+	overflow: hidden;
+	top: 120px;
+	margin: 40px 40px 0 80px;
+	float: left;
+	width: 200px;
+	height: 300px;
+	background-color:black;
+	border-radius: 100px;
+	opacity: 0.8;
+}
+.text{
+	font-size: 30px;
+}
+a{
+	text-decoration: none;
+	color: black;
+}

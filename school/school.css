@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* CSS Document */
+.headline{
+	height:80px;
+	background-color: #666699;
+}
+.name{
+	display: inline-block;
+}
+#season{
+	height:80px;
+	background-color: #666699;
+}
+#nowtime{
+	display: inline-block;
+}
+#center{
+	margin: 40px auto;
+	height: 400px;
+	background-color: antiquewhite;
+}
+.selecttime{
+    margin-left: 400px;
+	display: inline-block;
+	width: 500px;
+	vertical-align:text-top;
+}
+select{
+	width: 100px;
+	height: 25px;
+}
+#showpic1,#showpic2{
+	display: inline-block;
+    margin: 10px 10px 10px 40px;
+	width: 400px;
+	height: 400px;
+	background-color: antiquewhite;
+	vertical-align: middle;
+}
+#showtext1,#showtext2{
+	display: inline-block;
+    margin: 10px 10px 10px 40px;
+	width: 700px;
+	height: 400px;
+	background-color: antiquewhite;
+	opacity: 0.5;
+	vertical-align: middle;
+	font-size: 20px;
+	line-height: 30px;
+}
+.bottom{
+	height: 80px;
+	background-color: #666699;
+}
+.huidaodingbu{
+	display: block;
+	float: left;
+	margin: 10px 0 10px 100px;
+	text-decoration: none;
+	color: black;
+}

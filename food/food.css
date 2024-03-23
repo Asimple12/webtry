@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* CSS Document */
+.headline{
+	height:80px;
+	background-color: #666699;
+}
+.name{
+	display: inline-block;
+}
+.picfall{
+	position: relative;
+	overflow: hidden;
+	margin: 10px auto;
+	height:100px;
+	background-color:antiquewhite;
+}
+.piclist{
+	animation: roll 10s linear infinite;
+	position: absolute;
+	display: flex;
+}
+@keyframes roll{
+	from{transform: translateX(0);}
+	to{transform: translateX(-50%);}
+}
+.pic1,.pic2,.pic3{
+	display: inline-block;
+    margin: 10px 10px 10px 40px;
+	width: 200px;
+	height: 200px;
+	background: no-repeat cover;
+	vertical-align: middle;
+}
+.pic1{
+	background-image: url(foodpicture/food13.jpg);
+}
+.pic2{
+	background-image: url(foodpicture/food16.jpg);
+}
+.pic3{
+	background-image: url(foodpicture/food1.jpg);
+}
+.text1,.text2,.text3{
+	display: inline-block;
+	vertical-align:middle;
+	overflow: hidden;
+    margin: 10px;
+	width: 950px;
+	height: 200px;
+	line-height: 40px;
+	background-color: antiquewhite;
+	opacity: 0.8;
+}
+.bottom{
+	height: 80px;
+	background-color: #666699;
+}
+.huidaodingbu{
+	display: block;
+	float: left;
+	margin: 10px 0 10px 100px;
+	text-decoration: none;
+	color: black;
+}

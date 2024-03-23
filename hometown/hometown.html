@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>我的家乡</title>
+	<link rel="stylesheet" href="hometown.css" type="text/css">
+	<script>
+	      function tabchange(event,tabname){
+			  var i=0;
+			  var tabbtn=document.getElementsByClassName('tabbtn');
+			  var tabcontent=document.getElementsByClassName("content");
+			  for(i=0;i<3;i++){
+				  tabcontent[i].style.display="none";
+				  tabbtn[i].className=tabbtn[i].className.replace(" active"," ");
+			  }
+			  document.getElementById(tabname).style.display="inline-block";
+			  event.currentTarget.className+=" active";
+		  }
+	</script>
+</head>
+<body>
+	<div class="headline">
+		<img width="70px" src="../index/indexpicture/logo.png" alt="加载失败了" title="铁线莲">
+		<div class="name">Clematis-一个帮你生成个人网站的助手</div>
+	</div>
+	<div class="card">
+	    <button class="tabbtn active" onClick="tabchange(event,'tab1')">潮剧</button>
+		<button class="tabbtn" onClick="tabchange(event,'tab2')">广济桥</button>
+		<button class="tabbtn" onClick="tabchange(event,'tab3')">工夫茶</button>
+	</div>
+	      <div id="tab1" class="content">
+	        <div class="pic"><img height="200px" width="300px" src="hometownpicture/chaoju.jpg" alt="加载失败了"></div>
+			  <br/>
+			<div style="display: inline-block">
+			<i>潮剧</i><br/>
+			<i style="margin-left: 50px">Teochew opera</i>
+			</div>
+			 <div class="text">
+			<p>潮剧，又名潮州戏、潮音戏、泉潮雅调、白字戏， 闽南语系剧种之一。流传于广东省汕头市、潮州市、揭阳市、福建省漳州市南部的传统戏剧，国家级非物质文化遗产。
+            潮剧是用潮州方言（漳州南部用闽南方言）演唱的一个古老的地方戏曲剧种，是宋元南戏的一个分支，吸收了弋阳、昆曲、皮黄、梆子戏的特长，结合本地民间艺术，如潮州音乐等，最终形成自己独特的艺术形式和风格。潮剧传统剧目分宋元南戏和明清传奇、文明戏和新编历史剧两大类，有剧目两千多个。潮剧距今已有400多年历史，是中国古老戏曲存活于舞台的生动例证，是中华民族优秀文化表现形式的代表之一，具有深刻的历史意义和较高的审美价值.</p>
+			  </div>
+	      </div>
+		  <div id="tab2" class="content"> 
+			  <div class="pic"><img height="200px" width="300px" src="hometownpicture/guangji.jpg" alt="加载失败了"></div>
+			  <br/>
+			<div style="display: inline-block">
+			<i>广济桥</i><br/>
+			<i style="margin-left: 50px">Guangji Bridge</i>
+			</div>
+			 <div class="text">
+			<p>广济桥，即潮州广济桥，古称康济桥、丁侯桥、济川桥，俗称湘子桥，又称潮州湘子桥，位于广东省潮州市古城东门外，横跨韩江，联结东西两岸，集梁桥、浮桥、拱桥于一体，为古代广东通向闽浙交通要津，是潮州八景之一，是潮汕地区著名文物旅游胜地，中国四大古桥之一，全国重点文物保护单位，国家AAAA级景区，被桥梁专家茅以升誉为“世界上最早的启闭式桥梁”。
+            广济桥始建于南宋乾道七年；明朝嘉靖九年形成“十八梭船廿四洲”的格局；解放前残破不堪；1958年进行加固维修，并拆除了十八梭船，改建为三孔钢架及两处高桩承台式桥梁；2003年10月开始进行全面维修，总体按明代风格为修复依据，功能定位为旅游观光步行桥；2007年竣工。
+			广济桥为浮梁结合结构，由东西二段石梁桥和中间一段浮桥组合而成，梁桥由桥墩、石梁和桥亭三部分组成。广济桥全长518米，中间浮桥长97.3米，由十八只木船连接而成</p>
+			  </div></div>
+		  	<div id="tab3" class="content">
+				<div class="pic"><img height="200px" width="300px"  src="hometownpicture/tea.png" alt="加载失败了"></div>
+			  <br/>
+			<div style="display: inline-block">
+			<i>工夫茶</i><br/>
+			<i style="margin-left: 80px">Gongfu Tea</i>
+			</div>
+			 <div class="text">
+			<p>潮州工夫茶艺，别称潮汕工夫茶，是广东省潮汕地区一带特有的传统饮茶习俗，潮汕的工夫茶最负盛名，蜚声四海，被尊称为“中国茶道”。
+			潮州工夫茶是中国茶艺中最具代表性的一种，是融精神、礼仪、沏泡技艺巡茶艺术、评品质量为一体的完整的茶道形式，既是一种茶艺，也是一种民俗，是“潮人习尚风雅，举措高超”的象征。潮州工夫茶被列入《国家级非物质文化遗产名录》。
+			潮州茶道是中国古老的传统茶文化中最有代表性的茶道。潮州工夫茶历史悠久。中国茶文化盛行于唐朝，潮州工夫茶则盛行于宋朝，贵族茶就是源于潮州工夫茶，已有千年历史。
+			在潮州当地更是把茶做为了待客的最佳礼仪并加以完善，这不仅是因为茶在许多方面有着养生的作用更因为自古以来茶就有“待君子，清心身”的意境。
+			喝工夫茶是广东潮州人一项日常生活中最平常不过的事了，饭后，或者客人来访，好友相见，都是以一壶茶来陪衬。</p>
+			  </div>
+	      </div>
+		<div class="bottom">
+		<div class="huidaodingbu"><a href="../index/index.html" class="huidaodingbu" target="_blank">主页</a></div>
+		<div class="huidaodingbu"><a href="../station/station.html" class="huidaodingbu" target="_blank">中转站</a></div>
+		<div class="huidaodingbu"><a href="../school/school.html" class="huidaodingbu" target="_blank">校园风光</a></div>
+		<div class="huidaodingbu"><a href="../food/food.html" class="huidaodingbu" target="_blank">美味珍馐</a></div>
+	</div>
+</body>
+</html>

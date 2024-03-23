@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>校园风光</title>
+	<link rel="stylesheet" href="school.css" type="text/css">
+	<script type="text/javascript">
+		   alert("请选择展示的季节！")
+	        function showtime(){
+				var date=new Date();
+				var year=date.getFullYear();
+				var month=date.getMonth()+1;
+				var day=date.getDate();
+				document.getElementById("nowtime").innerHTML=year+'-'+month+'-'+day;
+			}
+		      window.setInterval("showtime()",1000);
+		    function changecolor(){
+				var color=document.getElementById("showseason").value;
+				var mycenter=document.getElementById("center");
+				var myheadline=document.getElementById("headline");
+				var myseason=document.getElementById("season");
+				if(color==1){/*春天*/
+					myheadline.style.backgroundColor="#ccff99";
+					myseason.style.backgroundColor="#ccff99 ";
+					document.bgColor="#66cccc";
+					mycenter.style.background="url(schoolpicture/school1.jpg) no-repeat";
+					mycenter.style.backgroundSize="cover";
+				}else if(color==2){/*夏天*/
+					myheadline.style.backgroundColor="#ffcc66";
+					myseason.style.backgroundColor="#ffcc66";
+					document.bgColor="#6699ff";
+					mycenter.style.background="url(schoolpicture/school21.jpg) no-repeat";
+					mycenter.style.backgroundSize="cover";
+				}else if(color==3){/*秋天*/
+					myheadline.style.backgroundColor="#ff6666";
+					myseason.style.backgroundColor="#ff6666";
+					document.bgColor="#ff9966";
+					mycenter.style.background="url(schoolpicture/school20.jpg) no-repeat";
+					mycenter.style.backgroundSize="cover";
+				}else if(color==4){/*冬天*/
+					myheadline.style.backgroundColor="#c9c9c9";
+					myseason.style.backgroundColor="#c9c9c9";
+					document.bgColor="#a3a3a3";
+					mycenter.style.background="url(schoolpicture/school22.png) no-repeat";
+					mycenter.style.backgroundSize="cover";
+				}else{alert("请选择展示的季节！")}
+				
+			}
+	     </script>
+</head>
+
+<body>
+	<div class="headline" id="headline">
+		<img width="70px" src="../index/indexpicture/logo.png" alt="加载失败了" title="铁线莲">
+		<div class="name">Clematis-一个帮你生成个人网站的助手</div>
+	</div>
+	<div id="season">
+	    现在的时间为:<div id="nowtime"></div>
+		<div class="selecttime">
+			现在请选择你要展示的季节：
+			<form action="#">
+			<select name="showseason" id="showseason" onChange="changecolor(value)">
+				<option value="0">请选择</option>
+			    <option value="1">春天</option>
+				<option value="2">夏天</option>
+				<option value="3">秋天</option>
+				<option value="4">冬天</option>
+			</select>
+			</form>
+		</div>
+	</div>
+	<div id="center"></div>
+	<div id="showpic1"><img width="400px" height="400px" src="schoolpicture/school3.jpg" alt="加载失败了"></div>
+	<div id="showtext1">
+    暨南大学是中国历史最悠久的大学之一。学校的前身是1906年清政府创立于南京的暨南学堂，后迁至上海，1927年更名为国立暨南大学。抗日战争期间，迁址福建建阳。1946年迁回上海，1949年8月合并于复旦大学、交通大学等高校。新中国成立后，暨南大学于1958年在广州重建，“文革”期间一度停办，1978年在广州复办。改革开放后，学校快速发展。1996年6月，暨南大学成为全国面向21世纪重点建设的大学。2015年6月，学校入选广东省高水平大学重点建设高校。2017年9月，学校入选国家“双一流”建设高校。2018年10月24日，中共中央总书记、国家主席、中央军委主席习近平莅临暨南大学视察并发表重要讲话，希望暨南大学坚持办学特色，把学校办得更好，为海外侨胞回祖国学习、传承中华文化创造更好条件。2019年8月，中央统战部、教育部、广东省人民政府决定共同建设暨南大学。2022年2月，学校入选国家新一轮“双一流”建设高校。</div>
+	<div id="showtext2">
+	素有“华侨最高学府”之称的暨南大学，恪守“忠信笃敬”之校训，注重以中华优秀传统文化培养造就人才。学校积极贯彻“面向海外，面向港澳台”的办学方针，建校至今，共培养了来自世界五大洲170多个国家和港澳台地区的各类人才40余万人，堪称桃李满天下。
+ 	作为中国历史最悠久的大学之一，暨南大学在中国高等教育史上有着重要地位：第一所由国家创办的华侨高等学府，校名一直沿用的百年名校之一，全国首批试行学分制的高校，最早在综合性大学里开办医学院的大学，最早设立华侨华人问题研究机构的大学，最早创设商科的大学……
+	21世纪中华民族将实现伟大复兴，肩负着为海外华侨华人和港澳台地区培养人才光荣使命的暨南大学更加任重道远。新时代全体暨南人将深入贯彻落实习近平总书记视察学校重要讲话精神，继续坚持“面向海外、面向港澳台”的办学方针，大力实施“侨校+名校”的发展战略，弘扬“忠信笃敬、知行合一、自强不息、和而不同”的暨南精神，坚持“质量是生命、创新是灵魂”的办学理念，发愤图强，改革创新，为建设国内一流、世界知名的高水平大学而奋斗不懈。
+	</div>
+	<div id="showpic2"><img width="400px" height="400px" src="schoolpicture/school14.jpg" alt="加载失败了"></div>
+    <div class="bottom">
+		<div class="huidaodingbu"><a href="../index/index.html" class="huidaodingbu" target="_blank">主页</a></div>
+		<div class="huidaodingbu"><a href="../station/station.html" class="huidaodingbu" target="_blank">中转站</a></div>
+		<div class="huidaodingbu"><a href="../food/food.html" class="huidaodingbu" target="_blank">美味珍馐</a></div>
+		<div class="huidaodingbu"><a href="../hometown/hometown.html" class="huidaodingbu" target="_blank">我的家乡</a></div>
+	</div>
+	    
+	</body>
+</html>

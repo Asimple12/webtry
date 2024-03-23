@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>index</title>
+<link href="index.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+	<div class="headline">
+		<img width="70px" src="indexpicture/logo.png" alt="加载失败了" title="铁线莲">
+		<div class="name">Clematis-一个帮你生成个人网站的助手</div>
+		<div>
+			<ul class="daohang">
+				<div class="xiala">
+					<a href="#" class="xiala1">关于我们</a>
+					<div class="xiala2">
+						<a href="#" >联系客服</a>
+						<a href="#">加盟合作</a>
+						<a href="#">问题反馈</a>
+						<a href="#">修复</a>
+				    </div>
+				</div>
+				<li><a href="index.html" target="_blank">主页</a></li>
+				<li><a href="../school/school.html" target="_blank">校园风光</a></li>
+				<li><a href="../food/food.html" target="_blank">美味珍馐</a></li>
+				<li><a href="../hometown/hometown.html" target="_blank">我的家乡</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="pictureroll">
+		<div class="pic" >
+			<div><a href="../food/food.html" target="_blank"><img src="indexpicture/food17.png" alt="加载失败了" class="picroll" id="pic1"></a></div>
+			<div><a href="../school/school.html" target="_blank"><img src="indexpicture/school15.jpg" alt="加载失败了" class="picroll" id="pic2"></a></div>
+			<div><a href="../hometown/hometown.html" target="_blank"><img src="indexpicture/street.jpg" alt="加载失败了" class="picroll" id="pic3"></a></div>
+		</div>
+		<ul class="list">
+			<li onClick="changepic1(event,'pic1')" class="doll selected"></li>
+			<li onClick="changepic1(event,'pic2')" class="doll"></li>
+			<li onClick="changepic1(event,'pic3')" class="doll"></li>
+		</ul>
+	</div>
+	<div class="ad1">
+	    <img width="160px" height="400px" src="indexpicture/school4.jpg" alt="加载失败了">
+		<span class="close">点击关闭X</span>
+	</div>
+	<div class="ad2">
+		30s后自动关闭
+	</div>
+		<div class="input">
+	<h2 class="title">填写个人信息，自动生成属于你的个人网站</h2>
+		<form action="#">
+			<label>姓名：<input type="text" name="name"></label>
+			<br/>
+			性别:
+			<label><input type="radio" name="sex" value="man"><img src="indexpicture/man.png" alt="加载失败了" height="30px">男</label>
+			<label><input type="radio" name="sex" value="women"><img src="indexpicture/women.png"  alt="加载失败了" height="30px">女</label>
+			<br/>
+			<label for="school">学校：</label>
+			<select name="school" id="school">
+			<option value="JNU">暨南大学</option>
+			<option value="JNU">暨南大学</option>
+			<option value="JNU">暨南大学</option>
+			</select>
+			<br/>
+			喜欢的食物:
+			<label><input type="checkbox" name="food" value="changfen">肠粉</label>
+			<label><input type="checkbox" name="food" value="changfen">牛肉火锅</label>
+			<label><input type="checkbox" name="food" value="changfen">工夫茶</label>
+			<label><input type="checkbox" name="food" value="changfen">粉粿</label>
+			<br/>
+			<label for="seeday">对访客可见的天数:</label>
+			<input type="range" name="seeday" value="10" min="1" max="100" id="seeday" onChange="number()">
+			<span id="number">10</span>
+			<br/>
+			<label for="password">账户密码：</label>
+			<input type="password" name="password" id="password">
+			<br/>
+			 生日:<input type="date" name="year" value="birthday">
+			<br/>
+			<input type="checkbox" checked>我已同意隐私条款
+			<br/>
+			</form>
+		    <form action="../station/station.html" name="biaodan2" method="post" target="_blank">	
+			<input type="submit" value="生成">
+			</form>
+		</div>
+	<div class="bottom">
+		<div class="huidaodingbu"><a href="#top" class="huidaodingbu">回到顶部</a></div>
+		<div class="huidaodingbu"><a href="https://www.baidu.com" class="huidaodingbu" target="_blank">百度</a></div>
+		<div class="huidaodingbu"><a href="https://www.163.com" class="huidaodingbu" target="_blank">163</a></div>
+		<div class="huidaodingbu"><a href="https://www.qq.com" class="huidaodingbu" target="_blank">qq</a></div>
+	</div>
+	
+	<script>
+		var close=document.querySelector('.close');
+		var ad1=document.querySelector('.ad1');
+		   close.onclick=function(){ ad1.style.display='none';}
+		var ad2=document.querySelector('.ad2');
+		setTimeout(function(){ad2.style.display='none'},30000);
+		function number(){
+			var seeday=document.getElementById('seeday').value;
+			document.getElementById('number').innerHTML=seeday;
+		}
+		function changepic1(event,picnum){
+			var i=0;
+			var doll=document.getElementsByClassName("doll");
+			var pic=document.getElementsByClassName("picroll");
+			for(i=0;i<3;i++){
+				doll[i].className=doll[i].className.replace(" selected"," ");
+				pic[i].style.display="none";
+			}
+			event.currentTarget.className+=" selected";
+			document.getElementById(picnum).style.display="block";
+		}
+	</script>
+</body>
+</html>
